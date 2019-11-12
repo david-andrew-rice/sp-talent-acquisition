@@ -1,0 +1,30 @@
+/* START login page */
+
+.hero {
+    background: url('../images/hero-images/business-meeting-2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-body {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* END login page */
+
+
+/* START home page */
+
+.hero.home {
+    background: url('../images//hero-images/business-meeting-3.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* END home page */
