@@ -1,58 +1,106 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Salty Potatos</title>
+    <link rel="stylesheet" href="styles/bulma.min.css" />
+    <script
+      src="https://kit.fontawesome.com/605c9bfe2c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link rel="stylesheet" href="../styles/debug.css" /> -->
+    <link rel="stylesheet" href="../styles/helpers.css" />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Salty Potatos Login</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-	<script src="https://kit.fontawesome.com/605c9bfe2c.js" crossorigin="anonymous"></script>
-	<!-- <link rel="stylesheet" href="styles/debug.css"> -->
-	<link rel="stylesheet" href="styles/helpers.css">
-	<link rel="stylesheet" href="styles/main.css">
+  <style>
+    .hero {
+      background:
+      /* top, transparent red, faked with gradient */ linear-gradient(
+          rgba(43, 122, 120, 0.6),
+          rgba(43, 122, 120, 0.6)
+        ),
+        /* bottom, image */
+          url("images/hero-images/business-meeting-review-wide.jpg") center /
+          cover;
+    }
 
-</head>
+    @media (max-width: 768px) {
+      .hero-body .subtitle {
+        font-size: 18px;
+      }
+      .hero-body .title {
+        font-size: 28px;
+      }
+    }
+  </style>
 
-<body>
-	<section class="hero is-fullheight">
-		<div class="hero-body">
-			<div class="container">
-				<div class="columns is-centered">
-					<div class="column is-5-tablet is-4-desktop is-3-widescreen">
-						<div class="field has-text-centered">
-							<img src="images/icon/salty-potatos_logo-white.png" alt="">
-						</div>
-						<div class="field">
-							<label class="label has-text-white" for="email">Email</label>
-							<div class="control">
-								<input class="input" type="email" placeholder="e.g. johnsmith@outlook.com">
-							</div>
-						</div>
-						<div class="field">
-							<label class="label has-text-white" for="password">Password</label>
-							<div class="control has-icons-left">
-								<input class="input" type="password" placeholder="*********">
-								<span class="icon is-small is-left">
-									<i class="fa fa-lock"></i>
-								</span>
-							</div>
-						</div>
-						<div class="field">
-							<label for="checkbox" class="checkbox has-text-white">
-								<input type="checkbox">
-								Remember me
-							</label>
-						</div>
-						<div class="field">
-							<button class="button is-success">
-								Login
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-</body>
+  <body>
+    <!-- .hero -->
+    <section class="hero is-fullheight">
+      <!-- .hero-head -->
+      <nav class="hero-head">
+        <div class="columns is-mobile is-marginless heading has-text-bold">
+          <div class="column left">
+            <a href="index.html">
+              <img
+                src="images/icon/salty-potatos_logo-white.png"
+                style="height: 1.3rem;"
+                alt="salty potatos logo, home link."
+              />
+            </a>
+          </div>
+          <div class="column center desktop">
+            <p class="navbar-item has-text-white">home</p>
+            <p class="navbar-item has-text-white">about</p>
+            <p class="navbar-item has-text-white">contact</p>
+          </div>
+          <div class="column right">
+            <p class="navbar-item desktop has-text-white">search</p>
+            <p class="navbar-item desktop has-text-white">sign in</p>
+            <figure class="navbar-item image has-text-white center">
+              <i
+                class="fas fa-bars center"
+                style="width: 1rem; height: 1rem;"
+              ></i>
+            </figure>
+          </div>
+        </div>
+      </nav>
+      <!-- /.hero-head -->
 
+      <!-- .hero-body -->
+      <header class="hero-body">
+        <div
+          class="is-overlay has-text-centered single-spaced"
+          style="top: 25%;"
+        >
+          <h1 class="subtitle is-4 has-text-weight-light has-text-white">
+            Right the First Time
+          </h1>
+          <h2 class="title is-1 has-text-white">Because Business Matters</h2>
+        </div>
+      </header>
+      <!-- /.hero-body -->
+    </section>
+    <!-- /.hero -->
+
+    <!-- .services -->
+    <section class="services">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="columns"></div>
+          </div>
+          <div class="column has-text-centered">
+            <div class="columns"></div>
+          </div>
+          <div class="column has-text-centered">
+            <div class="columns"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.services -->
+  </body>
 </html>
