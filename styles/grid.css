@@ -1,0 +1,21 @@
+#sec-title  { grid-area: sec-title; }
+#sec-2      { grid-area: sec-2; }
+#sec-3      { grid-area: sec-3; }
+#sec-4      { grid-area: sec-4; }
+
+#grid {
+    display: grid;
+    grid-template-areas: 
+        "sec-title  sec-title   sec-title"
+        "sec-2      sec-3       sec-4";
+}
+
+@media (max-width: 767px) {
+    #grid {
+        grid-template-areas: 
+            "sec-title  sec-title   sec-title"
+            "sec-2      sec-2       sec-2"
+            "sec-3      sec-3       sec-3"
+            "sec-4      sec-4       sec-4";
+    }
+}
